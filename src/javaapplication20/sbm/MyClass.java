@@ -1,0 +1,129 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication20.sbm;
+
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.util.Scanner;
+
+/**
+ *
+ * @author DELL
+ */
+public class MyClass {
+
+    //  private static int employee;
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        String name = "SBM Masala";
+        String Price = "RS50";
+        long tollfree = 150015150L;
+        String Headoff = "no.26,salabogam,kanchipuram.";
+        String EXPDATE = "2020Dec";
+        String Country = "India";
+        int Discount = 10;
+
+        LocalDateTime kanchipuram = LocalDateTime.now();
+        System.out.println(kanchipuram);
+        System.out.println("Brand name: " + name);
+        System.out.println("product price:" + Price);
+        System.out.println("Tollfree:" + tollfree);
+        System.out.println("Headoff:" + Headoff);
+        System.out.println("EXPDATE:" + EXPDATE);
+        System.out.println("country:" + Country);
+        System.out.println("Discount:" + Discount);
+
+        String[] masala = {"listof product:" + "Chilli powder,pepper powder,sambar powder."};
+        for (String a : masala) {
+            System.out.println(a);
+        }
+        
+        String B = "Bill Detail:"; 
+        System.out.println(B);
+        String date = "Date:";
+        System.out.println(date);
+        
+        LocalDate myobj = LocalDate.now();
+        System.out.println(myobj);
+        String Shopname = "vv Super market";
+        long billno = 70143201L;
+        int totalqty = 2;
+        String payment = "\n card[]:\n cash[]:";
+        String Grandtotal = "2500";
+
+        System.out.println("shopname:" + Shopname);
+        System.out.println("billno:" + billno);
+        System.out.println("totalqty:" + totalqty);
+        System.out.println("payment:" + payment);
+        System.out.println("Grandtotal:" + Grandtotal);
+
+        int buyabove = 3000;
+        if (buyabove > 2500) {
+            System.out.println("command: " + "Thanks for coming:)");
+        } else {
+            System.out.println("command:" + "you got 10percent discount:)");
+        }
+              
+        String EMAIL_ID = "raj@devopsbees.com";
+        System.out.println("For Feedback:"+ EMAIL_ID);
+        
+        int noofworkers = 5;
+        System.out.println("noofEmployee:" + noofworkers);
+
+        String detials;
+        System.out.println("List of employees:");
+
+        String Employeename = "Rajkumar K";
+        int id = 01;
+        String disignation = "Associate software engg";
+        String Qualification = "Engg";
+
+        System.out.println("Employeename1:" + Employeename);
+        System.out.println("idno:" + id);
+        System.out.println("Disignaion:" + disignation);
+        System.out.println("Qualification:" + Qualification);
+
+        String a = "perfomance detail for Raj";
+        System.out.println(a);
+
+        String monthly = "target";
+        System.out.println("monthly:" + monthly);
+
+        int x = 15;
+        int y = 20;
+        if (x < y) {
+            System.out.println("Feedback to company:" + "Good performance");
+        } else {
+            System.out.println("worning to company:" + "poor performance");
+        }
+
+        Employeename = "Mounika";
+        id = 02;
+        disignation = "Software engg";
+        Qualification = "Engg";
+
+        System.out.println("Employeename2:" + Employeename);
+        System.out.println("idno:" + id);
+        System.out.println("Disignation:" + disignation);
+        System.out.println("Qualification:" + Qualification);
+
+        String b = "perfomance detail for mounika";
+        System.out.println(b);
+
+        monthly = "target";
+        System.out.println("monthly:" + monthly);
+
+        int m = 15;
+        int n = 20;
+        if (m < n) {
+            System.out.println("Feedback to company:" + "Good performance");
+        } else {
+            System.out.println("worning to company:" + "poor performance");
+        }
+
+    }
+}
