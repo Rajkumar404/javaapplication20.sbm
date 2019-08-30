@@ -1,0 +1,89 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package javaapplication20.sbm;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.Scanner;
+
+/**
+ *
+ * @author DELL
+ */
+public class Busticket {
+    
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+         
+        
+         System.out.println("Enter the Bus code:" + "Bus code: SETC,KSRTC,ASIAN EXP,NATIONAL EXP,");
+         String BUS = input.next();
+        
+        if(BUS.equalsIgnoreCase("SETC"))
+        {
+            System.out.println("Welcome to Tamilnadu");
+        }
+        else if(BUS.equalsIgnoreCase("KSRTC"))
+        {
+        System.out.println("Welcome to Karnataka");
+        }
+        else if(BUS.equalsIgnoreCase("ASIAN EXP")){
+            System.out.println("Welcome to Our Travels");
+        }
+        else if(BUS.equalsIgnoreCase("NATIONAL EXP")){
+            System.out.println("Welcome to Our Travels.Happy journey");
+        }
+        else{
+            System.out.println("Your code is wrong.Enter correct once.");
+        }
+        
+
+        System.out.println("Passenger Detail:)");
+
+        System.out.println("Enter first name:");
+        String first = input.next();
+        System.out.println("Enter last name:");
+        String last = input.next();
+        System.out.println("Enter PNR no:");
+        String PNR_no = input.next();
+        System.out.println("Enter Your Age:");
+        String Your_AGE = input.next(); 
+        
+        int age = 45;
+        if (age>60)
+            System.out.println("You are older");
+        else
+            System.out.println("you are young");
+  
+        long Ticket_no;
+        String Route;
+        String Departure_DATE_TIME;
+        LocalDate Bus = LocalDate.now();
+        LocalTime myObj = LocalTime.now();
+        int Seat_no;
+        short Fare;
+        String Boarding_point;
+
+        System.out.println("Ticket_no:" + "TN21789654123");
+        System.out.println("Route:" + "Kanchipuram to Bangaloru");
+        System.out.println("Departure_DATE_TIME:");
+        System.out.println("Date:" + Bus);
+        System.out.println("Time:" + myObj);
+        System.out.println("Seat.no:" + 07);
+        System.out.println("Fare:" + 525);
+        System.out.println("Boarding point:" + "Indiranager Indian oil Petrol bunk.");
+
+        String name;
+        name = "Rajkumar";
+        if (name.equals("Rajkumar")) {
+            System.out.println("Your name is list access granted");
+        } else {
+            System.out.println("your name is not in the list access denied");
+        }   
+    }
+}
